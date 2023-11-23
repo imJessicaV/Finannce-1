@@ -52,6 +52,7 @@ $variationCRFB = ($dadosCRFB['CRFB3']['change_percent'] <= 0) ? 'bg-danger' : 'b
 // Retorno dos resultados da API
 //pr($HGFinance->data);
 
+
 ?>
 
 
