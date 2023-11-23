@@ -17,24 +17,24 @@ $dadosCRFB = $HGFinance->get('stock_price', array('symbol' => 'CRFB3'));
 
 //Mudar cor de acordo com a variação da cotação
 $variationDolar = ($dados['currencies']['USD']['variation'] < 0) ? 'bg-danger' : 'bg-success';
-$variationEUR = ($dados['currencies']['EUR']['variation'] < 0) ? 'danger' : 'info';
-$variationGBP = ($dados['currencies']['GBP']['variation'] < 0) ? 'danger' : 'info';
-$variationARS = ($dados['currencies']['ARS']['variation'] < 0) ? 'danger' : 'info';
-$variationCAD = ($dados['currencies']['CAD']['variation'] < 0) ? 'danger' : 'info';
-$variationAUD = ($dados['currencies']['AUD']['variation'] < 0) ? 'danger' : 'info';
-$variationJPY = ($dados['currencies']['JPY']['variation'] < 0) ? 'danger' : 'info';
-$variationCNY = ($dados['currencies']['CNY']['variation'] < 0) ? 'danger' : 'info';
-$variationBTC = ($dados['currencies']['BTC']['variation'] < 0) ? 'danger' : 'info';
+$variationEUR = ($dados['currencies']['EUR']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationGBP = ($dados['currencies']['GBP']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationARS = ($dados['currencies']['ARS']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationCAD = ($dados['currencies']['CAD']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationAUD = ($dados['currencies']['AUD']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationJPY = ($dados['currencies']['JPY']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationCNY = ($dados['currencies']['CNY']['variation'] < 0) ? 'bg-danger' : 'bg-success';
+$variationBTC = ($dados['currencies']['BTC']['variation'] < 0) ? 'bg-danger' : 'bg-success';
 
 //Mudar cor de acordo com a variação da bolsa de valores
-$variationStock = ($dados['stocks']['variation'] < 0) ? 'danger' : 'info';
+$variationStock = ($dados['stocks']['variation'] < 0) ? 'bg-danger' : 'bg-success';
 
 //Mudar cor de acordo com a variação da ação
-$variationEMBR = ($dadosEMBR['EMBR3']['change_percent'] <= 0) ? 'danger' : 'info';
-$variationITSA = ($dadosITSA['ITSA4']['change_percent'] <= 0) ? 'danger' : 'info';
-$variationPETR = ($dadosPETR['PETR4']['change_percent'] <= 0) ? 'danger' : 'info';
-$variationPSSA = ($dadosPSSA['PSSA3']['change_percent'] <= 0) ? 'danger' : 'info';
-$variationCRFB = ($dadosCRFB['CRFB3']['change_percent'] <= 0) ? 'danger' : 'info';
+$variationEMBR = ($dadosEMBR['EMBR3']['change_percent'] <= 0) ? 'bg-danger' : 'bg-success';
+$variationITSA = ($dadosITSA['ITSA4']['change_percent'] <= 0) ? 'bg-danger' : 'bg-success';
+$variationPETR = ($dadosPETR['PETR4']['change_percent'] <= 0) ? 'bg-danger' : 'bg-success';
+$variationPSSA = ($dadosPSSA['PSSA3']['change_percent'] <= 0) ? 'bg-danger' : 'bg-success';
+$variationCRFB = ($dadosCRFB['CRFB3']['change_percent'] <= 0) ? 'bg-danger' : 'bg-success';
 
 
 // Verificando a autenticacao da chave
